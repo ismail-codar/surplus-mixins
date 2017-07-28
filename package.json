@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\\\Users\\\\codar.victor\\\\Documents\\\\GitHub\\\\surplus-mixins",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\\\Users\\\\codar.victor\\\\Documents\\\\GitHub\\\\surplus-mixins",
+        "spec": "C:\\Users\\codar.victor\\Documents\\GitHub\\surplus-mixins",
+        "type": "directory"
+      },
+      "C:\\Users\\codar.victor\\Documents\\GitHub\\surplus-material"
+    ]
+  ],
+  "_from": "..\\surplus-mixins",
+  "_id": "surplus-mixins@1.0.0",
+  "_inCache": true,
+  "_location": "/surplus-mixins",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\\\Users\\\\codar.victor\\\\Documents\\\\GitHub\\\\surplus-mixins",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\\\Users\\\\codar.victor\\\\Documents\\\\GitHub\\\\surplus-mixins",
+    "spec": "C:\\Users\\codar.victor\\Documents\\GitHub\\surplus-mixins",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:..\\surplus-mixins",
+  "_shasum": "5e4ab086d430ec4ec18b18f6d6446ab884d742e3",
+  "_shrinkwrap": null,
+  "_spec": "C:\\\\Users\\\\codar.victor\\\\Documents\\\\GitHub\\\\surplus-mixins",
+  "_where": "C:\\Users\\codar.victor\\Documents\\GitHub\\surplus-material",
+  "author": {
+    "name": "ismail codar"
+  },
+  "dependencies": {
+    "surplus": "^0.4.3"
+  },
+  "description": "Some surplus mixins",
+  "devDependencies": {
+    "typescript": "^2.3.4"
+  },
+  "gitHead": "4a52dc0222fa9bd11729189ca25953fce7b25050",
+  "license": "MIT",
+  "main": "dist",
+  "name": "surplus-mixins",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "build": "tsc"
+  },
+  "version": "1.0.0"
+}
