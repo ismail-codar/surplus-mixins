@@ -1,4 +1,4 @@
-import { addEvents } from "surplus-mixins/all";
+import { addEvents } from "./all";
 
 export type SDragEventType = {
     [k in

@@ -1,9 +1,9 @@
-import { SMouseEventType } from "surplus-mixins/mouse";
-import { SKeyboardEventType } from "surplus-mixins/keyboard";
-import { SDragEventType } from "surplus-mixins/drag";
-import { SClassType } from "surplus-mixins/class";
-import { SStyleType } from "surplus-mixins/style";
-import { SAttributeType } from "surplus-mixins/attribute";
+import { SMouseEventType } from './mouse';
+import { SKeyboardEventType } from './keyboard';
+import { SDragEventType } from './drag';
+import { SClassType } from './class';
+import { SStyleType } from './style';
+import { SAttributeType } from './attribute';
 export declare const addEvents: (node: Node, arg: any) => void;
 export declare type ISurplusMixins = {
     onmouse?: SMouseEventType;
