@@ -2,6 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+var nodeExternals = require('webpack-node-externals');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
@@ -18,7 +19,8 @@ const webpackConfig = {
       's-js': path.resolve(path.join(__dirname, 'node_modules', 's-js')) //https://github.com/webpack/webpack/issues/2134#issuecomment-192579511
     }
   },
-  externals: ['s-js', 'surplus'],
+  target: isProd ? 'node' : undefined,
+  externals: isProd ? nodeExternals() : undefined,
   devtool: isProd ? undefined : 'sourcemap',
   module: {
     rules: [
