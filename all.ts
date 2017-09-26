@@ -4,6 +4,7 @@ import { classes, SClassType } from './class';
 import { SDragEventType } from './drag';
 import { onkey, SKeyboardEventType } from './keyboard';
 import { onmouse, SMouseEventType } from './mouse';
+import { ondrag } from './drag';
 import S from 's-js';
 
 export const addEvents = (node: Node, arg: any) => {
