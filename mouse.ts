@@ -17,7 +17,7 @@ export type SMouseEventType = {
     | 'dblclick']?: (evt: MouseEvent) => void
 };
 
-export default function onmouse(arg: SMouseEventType) {
+export function onmouse(arg: SMouseEventType) {
   return function onmouse(node: Node) {
     arg && addEvents(node, arg);
   };

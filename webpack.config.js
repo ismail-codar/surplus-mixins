@@ -9,9 +9,10 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 const isProd = process.argv.indexOf('-p') !== -1;
 
 const webpackConfig = {
-  entry: { index: './all.ts' },
+  entry: { main: './index.ts' },
   output: {
-    filename: './dist/[name].js'
+    filename: './dist/[name].js',
+    libraryTarget: 'umd'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

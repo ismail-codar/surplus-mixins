@@ -2,7 +2,7 @@ export type SAttributeType = {
     [k: string]: any
 }
 
-export default function attrs(...args: SAttributeType[]) {
+export function attrs(...args: SAttributeType[]) {
     return function attrs(node: HTMLElement) {
         if (args) {
             args.forEach((arg: SAttributeType) => {

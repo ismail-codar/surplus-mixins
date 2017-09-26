@@ -7,7 +7,7 @@ export type SKeyboardEventType = {
     "keypress"
     ]?: (evt: KeyboardEvent) => void};
 
-export default function onkey(arg: SKeyboardEventType) {
+export function onkey(arg: SKeyboardEventType) {
     return function onkey(node: Node) {
         arg && addEvents(node, arg)
     }

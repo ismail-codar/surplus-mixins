@@ -15,10 +15,12 @@
     "webpack-dev-server": "^2.8.2"
   },
   "license": "MIT",
-  "main": "dist",
-  "name": "surplus-mixins",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "scripts": {
-    "build": "tsc --target es5"
+    "build": "webpack -p",
+    "dtsbundle":
+      "dts-bundle --name surplus-mixins --main dist/index.d.ts --out main.d.ts"
   },
   "version": "1.0.0",
   "repository": {

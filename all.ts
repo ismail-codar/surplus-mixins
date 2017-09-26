@@ -1,9 +1,9 @@
-import onmouse, { SMouseEventType } from './mouse';
-import onkey, { SKeyboardEventType } from './keyboard';
-import ondrag, { SDragEventType } from './drag';
-import classes, { SClassType } from './class';
-import styles, { SStyleType } from './style';
-import attrs, { SAttributeType } from './attribute';
+import { attrs, SAttributeType } from './attribute';
+import { styles, SStyleType } from './style';
+import { classes, SClassType } from './class';
+import { SDragEventType } from './drag';
+import { onkey, SKeyboardEventType } from './keyboard';
+import { onmouse, SMouseEventType } from './mouse';
 import S from 's-js';
 
 export const addEvents = (node: Node, arg: any) => {
@@ -33,7 +33,7 @@ const mixinMap: any = {
   styles: styles,
   attrs: attrs
 };
-export default function mixins(...args: ISurplusMixins[]) {
+export function mixins(...args: ISurplusMixins[]) {
   return function mixins(node: any) {
     if (args) {
       args.forEach((arg: any) => {

@@ -352,7 +352,7 @@ export type SStyleType = {
     "userSelect"
     ]?: DataSignal<string> | string }
 
-export default function styles(...args: SStyleType[]) {
+export function styles(...args: SStyleType[]) {
     return function style(node: any) {
         if (args) {
             args.forEach((arg: SStyleType) => {

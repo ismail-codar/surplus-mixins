@@ -12,7 +12,7 @@ export type SDragEventType = {
     "drop"
     ]?: (evt: DragEvent) => void};
 
-export default function ondrag(arg: SDragEventType) {
+export function ondrag(arg: SDragEventType) {
     return function ondrag(node: Node) {
         arg && addEvents(node, arg)
     }

@@ -1,9 +1,9 @@
-import { SMouseEventType } from './mouse';
-import { SKeyboardEventType } from './keyboard';
-import { SDragEventType } from './drag';
-import { SClassType } from './class';
-import { SStyleType } from './style';
 import { SAttributeType } from './attribute';
+import { SStyleType } from './style';
+import { SClassType } from './class';
+import { SDragEventType } from './drag';
+import { SKeyboardEventType } from './keyboard';
+import { SMouseEventType } from './mouse';
 export declare const addEvents: (node: Node, arg: any) => void;
 export declare type ISurplusMixins = {
     onmouse?: SMouseEventType;
@@ -13,4 +13,4 @@ export declare type ISurplusMixins = {
     styles?: SStyleType | SStyleType[];
     attrs?: SAttributeType | SAttributeType;
 };
-export default function mixins(...args: ISurplusMixins[]): (node: any) => void;
+export declare function mixins(...args: ISurplusMixins[]): (node: any) => void;

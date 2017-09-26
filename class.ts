@@ -5,7 +5,7 @@ export type SClassType = {
     [k: string]: DataSignal<boolean> | boolean
 }
 
-export default function classes(...args: SClassType[]) {
+export function classes(...args: SClassType[]) {
     return function classes(node: any) {
         if (args) {
             const classNames: any[] = []
